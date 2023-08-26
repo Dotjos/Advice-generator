@@ -23,40 +23,52 @@
     <link rel="stylesheet" href="./output.css" />
     <script defer src="./advice.js"></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body class="bg-DarkBlue font-Manrope">
-    <div class="wrapper h-screen border">
-      <div class="advWrap mt-auto mb-auto">
-        <div
-          class="advDiv relative pt-7 pb-9 pl-5 pr-5 bg-DarkGrayishBlue text-center rounded-lg w-11/12 ml-auto mr-auto"
-        >
+    <div class="wrapper flex h-screen justify-center items-center">
+      <div
+        class="advWrap relative bg-DarkGrayishBlue h-max text-center rounded-lg w-11/12 md:w-3/4 lg:w-1/3 py-6 px-5"
+      >
+        <div class="advDiv">
           <h1 class="adviceNo uppercase text-xs tracking-widest text-NeonGreen">
             Advice #
           </h1>
-          <p class="text-LightCyan text-lg p-5 font-semibold">
+          <p class="text-LightCyan text-lg font-semibold p-6">
             "It is easy to sit up and take notice, what's difficult is getting
             up and taking action."
           </p>
-          <img src="./images/pattern-divider-mobile.svg" alt="" />
-          <div class="diceImg absolute bg-NeonGreen w-max rounded-full p-3">
-            <img src="./images/icon-dice.svg" class="ml-auto mr-auto" alt="" />
-          </div>
+        </div>
+
+        <div class="divImg mb-6">
+          <img
+            src="./images/pattern-divider-mobile.svg"
+            class="ml-auto mr-auto lg:hidden"
+            alt=""
+          />
+          <img
+            src="./images/pattern-divider-desktop.svg"
+            class="ml-auto mr-auto hidden lg:inline-block"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="diceImg cursor-pointer absolute bg-NeonGreen w-max rounded-full p-3 inset-x-1/2 transform -translate-x-1/2 hover:shadow-neongreen"
+        >
+          <img src="./images/icon-dice.svg" class="ml-auto mr-auto" alt="" />
         </div>
       </div>
-      <div class="attribution">
+
+      <div
+        class="attribution absolute bottom-0 lg:bottom-10 lg:text-base text-center text-xs w-11/12 ml-auto mr-auto"
+      >
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="text-NeonGreen"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a class="text-NeonGreen" href="#">Oladotun Joseph</a>.
       </div>
     </div>
   </body>
